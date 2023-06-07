@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{background-image: url(./picss\ \(5\).jpg);}
+        #mn{border: 5px rgb(227, 217, 237) solid;
+            background-color: rgb(227, 217, 237) ;
+            border-radius: 20px;
+            margin: 50px 100px 50px 100px;
+        }
+    </style>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <script src="./stock.js"></script>
+</head>
+<body>
+    <script src="js/jquery.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <div id="mn">
+        <div class="container">
+            <div class="row bg-success" style="padding-top: 20px;">
+                <div class="col-md-12">
+                    <h3 class="text-primary text-center">Amazon.com</h3>
+                    <p style="color: grey;" class="text-center">NASDAQ(AMZN)</p>
+                </div>
+            </div>
+            <div class="row bg-info" style="padding-top: 20px;">
+                <div class="col-md-12"> 
+                    <h2>100.61</h2><span style="color: green;">+2.90</span><span style="color:green;">(+2.97%)</span>
+                </div>
+            </div>
+            <div class="row" style="background-color: rgb(220, 230, 230); padding-top: 20px;">
+                <div class="col-md-4"></div>
+                <div class="col-md-2 text-info text-right">
+                    <p>Day's Range:</p>
+                    <p>52wk Range:</p>
+                    <p>Market Cap:</p>
+                    <p>Bid/Ask:</p>
+                    <p>Volume:</p>
+                    <p>Average Volume:</p>
+                    <p> Previous Close:</p>
+                    <p>Open:</p>
+                    <p>P/E Ratio:</p>
+                    <p>EPS:</p>
+                    <p>Revenue:</p>
+                    <p>Beta:</p>
+                    <p>Dividend:</p>
+                    <p>Shares Outstanding:</p>
+                    <p>Next Earnings Date:</p>
+                    <p> 1-Year Change:</p>
+                </div>
+                <div class="col-md-2 text-info">
+                    <p>98.00 - 100.85</p>
+                    <p>81.43 - 170.83</p>
+                    <p>1.03T</p>
+                    <p>100.49/100.51</p>
+                    <p>58,464,791</p>
+                    <p>69,201,260</p>
+                    <p>97.71</p>
+                    <p>98.14</p>
+                    <p>-375.84</p>
+                    <p>-0.267</p>
+                    <p>513.98B</p>
+                    <p>1.25</p>
+                    <p>-</p>
+                    <p>10,247,259,757</p>
+                    <p>April 27,2023</p>
+                    <p>-37.7%</p>
+                </div>
+                <div class="col-md-4"></div>
+
+            </div>
+            <div class="row bg-danger" style="padding-top: 20px;">
+                    <div class="col-md-12"> <p>Please Type the number of Stocks you want to buy.....!!!!</p></div>
+            </div>
+            <div class="row bg-warning" style="padding-top: 20px;">
+                <div class="col-md-4 text-primary text-right">Number of Stocks:</div>
+                <div class="col-md-4 text-center"><input type="number" style="border-radius: 15px;" placeholder="number of stocks" id="st"></div>
+                <div class="col-md-4"><button class="btn btn-primary" onclick="ama()">Next</button></div>
+            </div>
+            <div class="row bg-info" style="padding-top: 20px; padding-bottom: 20px;">
+                <div class="col-md-12 text-warning" id="res" style="color: rgb(241, 33, 33);"></div>
+            </div>
+            <div class="row bg-danger" style="padding-top: 20px;">
+                <div class="col-md-12"> <p>Please Type the number of Stocks you want to sell.....!!!!</p></div>
+        </div>
+        <div class="row bg-warning" style="padding-top: 20px;">
+            <div class="col-md-4 text-primary text-right">Number of Stocks:</div>
+            <div class="col-md-4 text-center"><input type="number" style="border-radius: 15px;" placeholder="number of stocks" id="st1"></div>
+            <div class="col-md-4"><button class="btn btn-primary" onclick="ama1 ()">Next</button></div>
+        </div>
+        <div class="row bg-info" style="padding-top: 20px; padding-bottom: 20px;">
+            <div class="col-md-12 text-warning" id="res1" style="color: rgb(241, 33, 33);"></div>
+        </div>
+            <div class="row bg-danger" style="background-color: rgb(69, 67, 67);">
+                <div class="col-md-12 text-center"><a href="./homepage.html"><button class="btn btn-info">BACK</button></a></div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

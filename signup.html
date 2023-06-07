@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #mn{border: 2px rgb(211, 207, 207) solid;
+background-color: rgb(211, 207, 207) ;
+margin: 20px 100px 50px 100px;
+
+border-radius: 20px;}
+body{background-image: url(./picss\ \(2\).jpg);}
+#f1,#sl,#a1 ,#f2,#a2,#f3,#a3{padding-top: 20px;}
+    </style>
+    <script src="./signup.js"></script>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+</head>
+<body>
+    <script src="js/jquery.js"></script>
+<script src="js/bootstrap.min.js"></script>
+    <div id="mn">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 text-center"><h1 id="head" class="text-primary" >STOCK TRAINER</h1></div>
+            </div>
+            <div class="row">
+            <div class="col-md-12 text-center"><h2 id="det" class="text-success" >Please Enter the details</h2></div>
+        </div>
+        <div class="row">
+            <div class="col-md-6 text-right"> <p id="nm" class="ne"> FULL NAME:</p></div>
+            <div class="col-md-6"><input  type="text" style="border-radius: 10px;" placeholder="Enter in capital letters" id="tt"></div>
+        </div>
+        <div class="row">
+            <div class="col-md-2"></div>
+            <div class="col-md-5 text-right"><p id="name"></p></div>
+            <div class="col-md-5"></div>
+        </div>
+        <div class="row">
+            <div class="col-md-6 text-right"><p>CONTACT NO:</p></div>
+            <div class="col-md-6"><input id="num" style="border-radius: 10px;"  type="number" placeholder="Enter the number"></div>
+        </div>
+        <div class="row">
+            <div class="col-md-2"></div>
+            <div class="col-md-5 text-right"><p id="contactno" ></p></div>
+            <div class="col-md-5"></div>
+        </div>
+        <div class="row">
+            <div class="col-md-6 text-right"><p> EMAIL-ID: </p></div>
+            <div class="col-md-6"><input id="mld"  type="email" style="border-radius: 10px;" placeholder="Email"></div>
+        </div>
+        <div class="row">
+            <div class="col-md-2"></div>
+            <div class="col-md-5 text-right"><p id="email"></p></div>
+            <div class="col-md-5"></div>
+        </div>
+        <div class="row">
+            <div class="col-md-6 text-right"><p > USERNAME:</p></div>
+            <div class="col-md-6"><input id="use" type="text" style="border-radius: 10px;"  placeholder="Enter the user name"></div>
+        </div>
+        <div class="row">
+            <div class="col-md-2"></div>
+            <div class="col-md-5 text-right"><p id="username"></p></div>
+            <div class="col-md-5"></div>
+        </div>
+        <div class="row">
+            <div class="col-md-6 text-right"><p>PASSWORD:</p></div>
+            <div class="col-md-6"><input id="ps" type="password" style="border-radius: 10px;" placeholder="Enter the password"></div>
+    </div>
+        <div class="row">
+            <div class="col-md-2"></div>
+            <div class="col-md-5 text-right"><p id="password" ></p></div>
+            <div class="col-md-5"></div>
+        </div>
+        <div class="row">
+            <div class="col-md-6 text-right"><p>CONFIRM PASSWORD:</p></div>
+            <div class="col-md-6"><input id="cff" type="password" style="border-radius: 10px;" placeholder="Confirm password"></div>
+        </div>
+        <div class="row">
+            <div class="col-md-2"></div>
+            <div class="col-md-5 text-right"><p id="confirmpassword" ></p></div>
+            <div class="col-md-5"></div>
+        </div>
+        <div class="row">
+            <div class="col-md-6 text-right"><input  type="checkbox"></div>
+            <div class="col-md-6"><img src="./captcha.jpg"  style="border-radius: 10px;"   width="150px" height="50px"></div>
+        </div>
+        <div class="row" style="padding-top: 8px;">
+            <div class="col-md-6 text-right"><p>Enter the captcha value:</p></div>
+            <div class="col-md-6"> <input id="cpch" type="text" style="border-radius: 10px;"  placeholder="Enter the  captcha value"></div>
+        </div>
+        <div class="row">
+            <div class="col-md-2"></div>
+            <div class="col-md-5 text-right"><p id="captcha" style="padding-left: 100px;"></p></div>
+            <div class="col-md-5"></div>
+        </div>
+        <div class="row" id="sl">
+            <div class="col-md-6 text-right">SELECT EXCHANGE COUNTRY:</div>
+            <div class="col-md-6">
+                <input type="text" placeholder="select the country" style="border-radius: 10px;" list="question">
+        <datalist id="question">
+            <option value="India">India</option>
+            <option value="United States">United States</option>
+            <option value="United Kingdom">United Kingdom</option>
+            <option value="Indonesia">Indonesia</option> 
+            <option value="Singapore">Singapore</option> 
+            <option value="Australia">Australia</option>
+            <option value="New Zealand">New Zealand</option>
+            <option value="Canada">Canada</option>
+            <option value="Malaysia">Malaysia</option>
+            <option value="Sweden">Sweden</option> 
+            <option value="Italy">Italy</option> 
+            <option value="Germany">Germany</option>
+            <option value="France">France</option>
+            <option value="Brazil">Brazil</option> 
+            <option value="China">China</option> 
+            <option value="Hongkong">Hongkong</option>
+        </datalist></div>
+        </div>
+        <div class="row" id="f1">
+            <div class="col-md-6 text-right">FIRST SECURITY QUESTION:</div>
+            <div class="col-md-6">
+                <input type="text" placeholder="select the first security question" style="border-radius: 10px;" list="first1">
+        <datalist id="first1">
+            <option value="Last name of  your favorite teacher?">Last name of  your favorite teacher?</option>
+            <option value="Your location when you first drove a vehicle?">Your location when you first drove a vehicle?</option>
+            <option value="Your childhood hero?">Your childhood hero?</option>
+            <option value="Your favorite sport\outdoor activity?">Your favorite sport\outdoor activity?</option> 
+            <option value="Color of your first car\vehicle?">Color of your first car\vehicle?</option> 
+            <option value="In which city  did your parents meet?">In which city  did your parents meet?</option>
+            <option value="Your favorite Sportsperson?">Your favorite Sportsperson?</option>
+            <option value="Where did you live at the age of ten?">Where did you live at the age of ten?</option>
+            <option value="Your childhood nickname?">Your childhood nickname?</option>
+            <option value="What was the name of your first school?">What was the name of your first school?</option> 
+        </datalist></div>
+        </div>
+        <div class="row" id="a1">
+            <div class="col-md-6 text-right">ANSWER TO ABOVE QUESTION</div>
+            <div class="col-md-6"><input type="text" style=" border-radius: 10px;" placeholder="Answer the question">
+                </div>
+        </div>
+        <div class="row" id="f2">
+            <div class="col-md-6 text-right">SECOND SECURITY QUESTION:</div>
+            <div class="col-md-6">
+                <input type="text" placeholder="select the second security question" style="border-radius: 10px;" list="second1">
+        <datalist id="second1">
+            <option value="Last name of  your favorite teacher?">Last name of  your favorite teacher?</option>
+            <option value="Your location when you first drove a vehicle?">Your location when you first drove a vehicle?</option>
+            <option value="Your childhood hero?">Your childhood hero?</option>
+            <option value="Your favorite sport\outdoor activity?">Your favorite sport\outdoor activity?</option> 
+            <option value="Color of your first car\vehicle?">Color of your first car\vehicle?</option> 
+            <option value="In which city  did your parents meet?">In which city  did your parents meet?</option>
+            <option value="Your favorite Sportsperson?">Your favorite Sportsperson?</option>
+            <option value="Where did you live at the age of ten?">Where did you live at the age of ten?</option>
+            <option value="Your childhood nickname?">Your childhood nickname?</option>
+            <option value="What was the name of your first school?">What was the name of your first school?</option> 
+        </datalist></div>
+        </div>
+        <div class="row" id="a2">
+            <div class="col-md-6 text-right">ANSWER TO ABOVE QUESTION</div>
+            <div class="col-md-6"><input type="text" style=" border-radius: 10px;" placeholder="Answer the question">
+                </div>
+        </div>
+        <div class="row" id="f3">
+            <div class="col-md-6 text-right">THIRD SECURITY QUESTION:</div>
+            <div class="col-md-6">
+                <input type="text" placeholder="select the third security question" style="border-radius: 10px;" list="third1">
+        <datalist id="third1">
+            <option value="Last name of  your favorite teacher?">Last name of  your favorite teacher?</option>
+            <option value="Your location when you first drove a vehicle?">Your location when you first drove a vehicle?</option>
+            <option value="Your childhood hero?">Your childhood hero?</option>
+            <option value="Your favorite sport\outdoor activity?">Your favorite sport\outdoor activity?</option> 
+            <option value="Color of your first car\vehicle?">Color of your first car\vehicle?</option> 
+            <option value="In which city  did your parents meet?">In which city  did your parents meet?</option>
+            <option value="Your favorite Sportsperson?">Your favorite Sportsperson?</option>
+            <option value="Where did you live at the age of ten?">Where did you live at the age of ten?</option>
+            <option value="Your childhood nickname?">Your childhood nickname?</option>
+            <option value="What was the name of your first school?">What was the name of your first school?</option> 
+        </datalist></div>
+        </div>
+        <div class="row" id="a3">
+            <div class="col-md-6 text-right">ANSWER TO ABOVE QUESTION</div>
+            <div class="col-md-6"><input type="text" style=" border-radius: 10px;" placeholder="Answer the question">
+                </div>
+        </div>
+        
+        <div class="row" style="padding-bottom: 10px; padding-top: 20px;">
+            <div class="col-md-6 text-right"><a href="./index.html"><button class="btn btn-warning" style="border-radius: 10px;">CANCEL</button></a></div>
+        <div class="col-md-6"><button class="btn btn-primary"style="border-radius: 10px;" onclick="si()" >REGISTER NEW ACCOUNT</button>
+        </div>
+    </div>
+        </div>
+    </div>
+</body>
+</html>
